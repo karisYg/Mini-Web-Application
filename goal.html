@@ -1,0 +1,15 @@
+{%extends 'layout.html'%}
+{%block body%}
+
+
+    <h2>{{goal.title}}</h2>
+    <small>Written by {{goal.author}} on {{goal.created_date}}</small>
+    <hr>
+
+    <p style="color:red;">
+        {{goal.body }}
+    </p>
+
+
+
+{%endblock%}

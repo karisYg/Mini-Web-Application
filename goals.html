@@ -1,0 +1,17 @@
+{% extends 'layout.html' %}
+
+{% block body%}
+
+    <h1>Goals</h1>
+    <ul class="list-group">
+    {% for goal in goals %}
+        <li class="list-group-item"><a href="goal/{{goal.id}}">{{ goal.title }}</a> </li>
+        <!--<small><p> {{goal.author}}</p></small>-->
+
+
+    {% endfor%}
+    </ul>
+
+
+
+{%endblock%}
